@@ -10,6 +10,7 @@ import org.simbrain.custom_sims.simulations.braitenberg.braitenbergGame
 import org.simbrain.custom_sims.simulations.braitenberg.braitenbergSim
 import org.simbrain.custom_sims.simulations.braitenberg.pursuer
 import org.simbrain.custom_sims.simulations.demos.*
+import org.simbrain.custom_sims.simulations.dynamical_systems.dynamicAssociativeNetwork
 import org.simbrain.custom_sims.simulations.dynamical_systems.lorenzSystem
 import org.simbrain.custom_sims.simulations.dynamical_systems.lorenzSystemSimbrain
 import org.simbrain.custom_sims.simulations.edge_of_chaos.edgeOfChaos
@@ -135,6 +136,7 @@ val simulations = dir("Simulations", alphabetical = true ) {
     }
 
     dir("Dynamical systems") {
+        item("Dynamic Associative Network") { dynamicAssociativeNetwork }
         item("Lorenz attractor") { lorenzSystem }
         item("Lorenz attractor (Pure Simbrain)") { lorenzSystemSimbrain }
     }
